@@ -1,0 +1,19 @@
+
+  <% for entry in @entries %>
+<h2><%= link_to(entry.title, entry_path(entry)) %></h2>
+	<p><%= entry.date %></p>
+	<p><%= entry.contents %></p>
+  <% end %>
+  <%= link_to("New entry", new_entry_path) %>
+   <div>
+	<h1>My favourite websites are:</h1>
+	<ul>
+	<li><a href="http://railsgirls.com">Rails Girls</a></li>
+	<li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
+	<li><a href="http://guides.rubyonrails.org">Ruby on Rails Guides</a></li>
+	<li><a href="http://jezebel.com">Ruby star</a></li>
+	</ul>
+	</div>
+<container>
+<img src="http://photos4.meetupstatic.com/photos/event/1/d/4/0/600_433687488.jpeg"/>
+</container>

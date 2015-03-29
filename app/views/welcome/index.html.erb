@@ -1,0 +1,32 @@
+<h1>My Personal Rails Girls Diary <3 !!!
+<containter>
+<img src="http://1minus1.com/UserStorage/images/labs/rubyrailsgirls-internal_no_border.png"/>
+</containter>
+ </h1>
+
+<div>
+ <% for entry in @entries %>
+	<h2><%= entry.title %></h2>
+	<p><%= entry.date %></p>
+	<p><%= entry.contents %></p>
+ <% end %>
+</div>
+<div>
+<h1>My favourite websites are:</h1>
+<ul>
+<%
+	@websites = [
+		["http://railsgirls.com", "Rails Girls"],
+		["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
+		["http://guides.rubyonrails.org", "Ruby on Rails Guides"],
+	]
+	%>
+<% for url, name in @websites %>
+<li><a href="<%= url %>"><%= name %></a></li>
+<% end %>
+
+</ul>
+</div>
+<container>
+<img src="http://photos4.meetupstatic.com/photos/event/1/d/4/0/600_433687488.jpeg"/>
+</container>
